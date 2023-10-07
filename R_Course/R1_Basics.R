@@ -31,6 +31,21 @@ summary_department <- data %>%
 
 print(summary_department)
 
+# Plot 
+# matplotlib = ggplot2
+ggplot(summary_department, aes( y = factor(Department), x = sum_attrition)) 
+            + geom_bar(stat = "identity")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
