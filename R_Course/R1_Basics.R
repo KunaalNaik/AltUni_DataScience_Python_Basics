@@ -37,8 +37,11 @@ ggplot(summary_department, aes( y = factor(Department), x = sum_attrition))
             + geom_bar(stat = "identity")
 
 
+# Age - Normally Distributed?
+ggplot(data, aes(Age)) + geom_histogram(bins = 10)
 
-
+# Age - Does it have Outliers?
+boxplot(data$Age)
 
 
 
