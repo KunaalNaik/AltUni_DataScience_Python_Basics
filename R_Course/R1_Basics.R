@@ -9,4 +9,4 @@ library(corrplot)
 ##### Import & Clean
 
 #Data Import
-data <- read.csv("")
+data <- read.csv("https://raw.githubusercontent.com/KunaalNaik/AltUni_DataScience_Python_Basics/main/R_Course/Employee_Attrition.csv")
