@@ -39,6 +39,26 @@ data[data$carat > upper_bound, "carat"] <- upper_bound
 boxplot(data$carat)
 
 
+# Regression Equation Using R
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
