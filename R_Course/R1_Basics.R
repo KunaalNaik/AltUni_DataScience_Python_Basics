@@ -43,6 +43,9 @@ ggplot(data, aes(Age)) + geom_histogram(bins = 10)
 # Age - Does it have Outliers?
 boxplot(data$Age)
 
+# Treat Outliers
+boxplot(data$PercentSalaryHike)
+
 
 
 
