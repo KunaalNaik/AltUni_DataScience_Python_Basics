@@ -41,8 +41,17 @@ boxplot(data$carat)
 
 # Regression Equation Using R
 
+linear_model <- lm(price ~ carat + x + depth + z, data = data)
 
+summary(linear_model)
 
+# Q-Q Plot
+# Extract residuals from the model
+residuals_data <- residuals(linear_model)
+
+# Create a q-Q plot for residuals
+qqnorm(residuals_data, main = "q-Q Plot of Residuals")
+qqline(residuals_data, col = "red")
 
 
 
