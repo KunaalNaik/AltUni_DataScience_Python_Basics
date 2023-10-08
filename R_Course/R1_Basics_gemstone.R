@@ -22,10 +22,21 @@ dfSummary(data)
 # Treat Outliers
 boxplot(data$carat)
 
+# Using IQR
+# Calculate the IQR (Interquartile Range)
+q1 <- quantile(data$carat, 0.25)
+q3 <- quantile(data$carat, 0.75)
+iqr <- q3 - q1
 
+# Define the lower and upper bounds for outliers
+lower_bound <- q1 - 1.5 * iqr
+upper_bound <- q3 + 1.5 * iqr
 
+# Cap outliers to the lower/upper bound
+data[data$carat < lower_bound, "carat"] <- lower_bound
+data[data$carat > upper_bound, "carat"] <- upper_bound
 
-
+boxplot(data$carat)
 
 
 
