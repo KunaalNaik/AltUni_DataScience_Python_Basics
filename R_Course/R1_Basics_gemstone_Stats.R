@@ -49,6 +49,8 @@ chi_sq_test <- chisq.test(contingency_table)
 
 print(chi_sq_test)
 
-#  Education Field and Attrition
+# Education Field and Attrition
+
+
 
 
